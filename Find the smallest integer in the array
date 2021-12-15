@@ -1,0 +1,11 @@
+using System.Linq;
+public class Kata 
+
+{
+    public static int FindSmallestInt(int[] args) 
+    {
+ var smallest = args.Min(arg => arg);
+   return smallest;
+    }
+}
+// var smallestBudget = movies.Min(movie => movie.Budget);
