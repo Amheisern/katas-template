@@ -17,6 +17,7 @@ namespace Solution
             {
                 return "odd";
             }
+            //empty
         }
     }
 }
