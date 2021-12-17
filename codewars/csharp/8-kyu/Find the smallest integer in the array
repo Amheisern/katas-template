@@ -1,0 +1,8 @@
+{
+    public static int FindSmallestInt(int[] args) 
+    {
+ return args.Min(arg => arg);
+   
+    }
+}
+// var smallestBudget = movies.Min(movie => movie.Budget);
