@@ -1,0 +1,5 @@
+def invert(num)
+num.map {|i| -i}
+end
+
+#[1, 2, 3].map { |n| n * n } #=> [1, 4, 9]
