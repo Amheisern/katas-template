@@ -1,0 +1,30 @@
+def square_digits num
+  # code goes here
+  num.to_s.chars.map{|x| x.to_i**2}.join.to_i
+end
+
+def square_digits num
+  num.digits.map { |d| d*d } .reverse.join.to_i
+end
+
+gavin stark 
+def digits(num)
+  num == 0 ? 1 : Math.log10(num).floor + 1
+end
+
+# All math style
+def square_digits num
+  answer = 0
+
+  (digits(num)-1).downto(0) do |i|
+    digit, num = num.divmod(10 ** i)
+    answer = answer * 10 ** digits(digit*digit) + digit**2
+  end
+
+  answer
+end
+
+# String manipulating style
+def square_digits(num)
+  num.to_s.chars.map { |char| char.to_i ** 2 }.join.to_i
+end
