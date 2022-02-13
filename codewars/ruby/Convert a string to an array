@@ -1,0 +1,18 @@
+Write a function to split a string and convert it into an array of words.
+
+def string_to_array(s)
+  s.split(' ')#your code here
+end
+
+def string_to_array(string)
+  string.split(" ")
+end
+
+def string_to_array(string)
+  string.split #  trying codewars out on my phone browser..
+end
+
+def string_to_array(string)
+  split_string = string.split()
+  return split_string
+end
