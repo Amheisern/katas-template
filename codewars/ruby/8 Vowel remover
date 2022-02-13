@@ -1,0 +1,9 @@
+used method  .delete could have used .gsub
+
+def shortcut(s)
+  s.delete('aeiou')
+end
+
+def shortcut(s)
+  s.gsub(/[aeiou]/, '')
+end
