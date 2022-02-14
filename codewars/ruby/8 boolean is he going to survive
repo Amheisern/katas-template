@@ -1,0 +1,25 @@
+did not get this one 
+
+def hero(bullets, dragons)
+  bullets/dragons >= 2
+end
+
+def hero(bullets, dragons)
+  if dragons <= (bullets / 2)
+    true
+  else
+    false
+  end
+end
+
+def hero(bullets, dragons)
+  dragons > bullets/2 ? false : true
+end
+
+def hero(bullets, dragons)
+  dragons <= bullets / 2
+end
+
+def hero(bullets, dragons)
+  dragons * 2 <= bullets ? true : false
+end
