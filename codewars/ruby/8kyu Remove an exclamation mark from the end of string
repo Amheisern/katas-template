@@ -1,0 +1,27 @@
+Exclamation marks series #1: Remove an exclamation mark from the end of string
+#    Syntax: str.chomp!
+
+    Parameters: Here, str is the given string.
+
+    Returns: A new string having no record separator from the end or nil if no changes were made.
+
+def remove(s)
+s.chomp("!")
+end
+
+def remove(s)
+  s.sub(/!$/, "")
+end
+
+def remove(s)
+s.delete_suffix("!")
+end
+
+def remove(s)
+  s[-1] == "!" ? s[0..-2] : s
+end
+
+def remove(s)
+s.nil? ? nil : s.chomp("!")
+end
+
