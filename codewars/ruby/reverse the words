@@ -1,0 +1,25 @@
+This is for reversing the words in a sentence but not the characters (to reverse the characters to you need to use .map
+
+def solution(sentence)
+  sentence.split.reverse.join(" ")
+end
+
+def solution(sentance)
+  sentance.split(' ').reverse.join(' ')
+end
+
+def solution(sentance)
+  sentance.split(/\s+/).reverse.join(' ');
+end
+
+def solution(s)
+  s.split.reverse*' '
+end
+
+def solution(sentence)
+  
+  words = sentence.split
+  words.reverse! 
+  words.join(" ")
+  
+end
