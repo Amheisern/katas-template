@@ -1,0 +1,18 @@
+Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"
+
+describe "Solution" do
+  it "Fixed tests" do
+    Test.assert_equals(reverse_words('The quick brown fox jumps over the lazy dog.'), 'ehT kciuq nworb xof spmuj revo eht yzal .god')
+    Test.assert_equals(reverse_words('apple'), 'elppa')
+    Test.assert_equals(reverse_words('a b c d'), 'a b c d')
+    Test.assert_equals(reverse_words('double  spaced  words'), 'elbuod  decaps  sdrow')
+  end
+end
+
+def reverse_words(str)
+  str.reverse.split(/ /).reverse.join(" ")
+  # Go for it
+end
